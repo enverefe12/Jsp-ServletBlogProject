@@ -1,0 +1,61 @@
+@charset "UTF-8";
+
+#main{
+	width: 100%;
+	margin: 0px;
+	padding: 0px;
+	font-family: Arial;
+}
+
+#header{
+	
+	width: 100%;
+	height: 150px;
+	background-image: url("img/header.jpg");
+}
+
+#contentmain{
+	width: 898;
+}
+
+#menu{
+	width: 9%;
+	min-height: 500px; 
+	border: 2px solid gray;
+	float: left;
+	background-image: url("img/menu.jpg");
+}
+
+#content{
+	width: 90%;
+	border: 2px solid gray;
+	float: right;
+	min-height: 500px;
+	background-color: #e2df9a;
+}
+#footer{
+	width: 100%;
+	
+}
+#texts{
+	width: 10px;
+	height: 10px;
+}
+
+a:link {
+   color: white;
+   font-weight: normal;
+   text-decoration: none;
+}
+
+a:link:hover {
+   color: red;
+   font-weight: normal;
+}
+body {
+background-image: url(images/arkaplan3.jpg);
+background-repeat: repeat;
+background-attachment: fixed;
+background-color: white;
+background-position: top-left;
+}
