@@ -4,14 +4,14 @@ public class Text {
 	
 	private String textPath;
 	private String name;
-	private int kategoriId;
+	private int categoryId;
 	private int textId;
 
-	public int getKategoriId() {
-		return kategoriId;
+	public int getCategoryId() {
+		return categoryId;
 	}
-	public void setKategoriId(int kategoriId) {
-		this.kategoriId = kategoriId;
+	public void setCategoryId(int categoryId) {
+		this.categoryId = categoryId;
 	}
 	public String getTextPath() {
 		return textPath;
@@ -31,11 +31,11 @@ public class Text {
 	public void setTextId(int textId) {
 		this.textId = textId;
 	}
-	public Text(String name, String textPath, int kategoriId, int textId) {
+	public Text(String name, String textPath, int categoryId, int textId) {
 		super();
 		this.name = name;
 		this.textPath = textPath;
-		this.kategoriId=kategoriId;
+		this.categoryId=categoryId;
 		this.textId=textId;
 	}
 	

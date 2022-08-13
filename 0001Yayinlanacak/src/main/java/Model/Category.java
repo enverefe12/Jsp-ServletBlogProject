@@ -3,19 +3,19 @@ package Model;
 public class Category {
 	
 	private int categoryId;
-	private String categoryName;
-	public String getCategoryName() {
-		return categoryName;
+	private String category;
+	public String getCategory() {
+		return category;
 	}
-	public void setCategoryName(String categoryName) {
-		this.categoryName = categoryName;
+	public void setCategory(String category) {
+		this.category = category;
 	}
 	public int getCategoryId() {
 		return categoryId;
 	}
-	public Category(int categoryId, String categoryName) {
+	public Category(int categoryId, String category) {
 		this.categoryId = categoryId;
-		this.categoryName = categoryName;
+		this.category = category;
 	}
 	public Category() {}
 	

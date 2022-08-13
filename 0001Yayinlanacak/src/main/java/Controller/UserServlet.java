@@ -53,7 +53,7 @@ public class UserServlet extends HttpServlet {
 	}
 
 	/**
-	 * Add User Method From {@link AddUserServlet}
+	 * Add User  
 	 * @param req
 	 * @param resp
 	 * @throws ServletException
@@ -85,7 +85,7 @@ public class UserServlet extends HttpServlet {
 	}
 
 	/**
-	 * Check User for Login {@link CheckUserServlet}
+	 * Check User for Login 
 	 * @param req
 	 * @param resp
 	 * @throws ServletException
@@ -117,7 +117,7 @@ public class UserServlet extends HttpServlet {
 	}
 
 	/**
-	 * Log Out the User {@link LogOutServlet}
+	 * Log Out the User 
 	 * @param req
 	 * @param resp
 	 * @throws ServletException

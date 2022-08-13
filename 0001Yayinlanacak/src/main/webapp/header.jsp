@@ -89,7 +89,7 @@ pageContext.setAttribute("as",SessionListener.activeSessions);
 			<hr>
 			<c:forEach items="${list}" var="i">
 			---<a
-					href="getCategories?categoryId=${i.categoryId}&categoryName=${i.categoryName}">${i.categoryName}</a>
+					href="getCategories?categoryId=${i.categoryId}&categoryName=${i.category}">${i.category}</a>
 				<br>
 			</c:forEach>
 			<hr>

@@ -7,6 +7,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import Model.User;
+import util.DataConnection;
 
 public class UserDao {
 
@@ -18,7 +19,7 @@ public class UserDao {
 	public User getUser(String username, String password) {
 		
 		try {
-			PreparedStatement psm=dt.getDataConnection().prepareStatement("Select * from dbo.users where username=? and password=?");
+			PreparedStatement psm=dt.getDataConnection().prepareStatement("Select * from users where username=? and password=?");
 			psm.setString(1,username);
 			psm.setString(2, password);
 			ResultSet rs=psm.executeQuery();
@@ -41,7 +42,7 @@ public class UserDao {
 	
 	public void addUser(String username, String password){
 			try {
-				PreparedStatement psm=dt.getDataConnection().prepareStatement("INSERT INTO dbo.users (username, password, role) VALUES (?, ?, 'member');");
+				PreparedStatement psm=dt.getDataConnection().prepareStatement("INSERT INTO users (username, password, role) VALUES (?, ?, 'member');");
 				psm.setString(1, username);
 				psm.setString(2, password);
 				psm.execute();
@@ -53,7 +54,7 @@ public class UserDao {
 	
 	public List<User> getAllUser(){
 		try {
-			PreparedStatement psm=dt.getDataConnection().prepareStatement("select*from dbo.users");
+			PreparedStatement psm=dt.getDataConnection().prepareStatement("select*from users");
 			ResultSet rs=psm.executeQuery();
 			List<User> list=new ArrayList<User>();
 			while(rs.next()) {

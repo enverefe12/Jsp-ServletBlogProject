@@ -5,7 +5,8 @@ import javax.servlet.http.HttpSessionEvent;
 import javax.servlet.http.HttpSessionListener;
 
 /**
- * Application Lifecycle Listener implementation class SessionListener
+ * Bu Listener sınıfın amacı kaç session aktif olduğuna bakmak amaçlıdır.
+ * --- Düzgün Çalışmıyor 
  *
  */
 @WebListener
